@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = ["src/vibegen/**"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
+
+[tool.hatch.envs.default.scripts]
+lint = "darglint ./src && ruff check --fix ./src && black --check ./src"
+format = "ruff check --fix ./src && black ./src"
+test = "pytest ./tests"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".", "src",
+]
+
+[project]
+name = "vibegen"
+version = "1.0.0"
+authors = [
+  { name="vibe-engineers", email="vibe.engineers.team@gmail.com" },
+  { name="tjtanjin", email="cjtanjin@gmail.com" },
+  { name="konglyyy", email="kongleyi99@gmail.com" },
+]
+description = "Bring vibes into your code: LLM-powered if-statements and loops!"
+dependencies = ["vibetools>=1.0.0,<2.0.0"]
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/vibe-engineers/vibegen"
+Issues = "https://github.com/vibe-engineers/vibegen/issues"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+exclude = ["build", "dist", ".venv"]
+src = ["src"]
+
+[tool.ruff.lint]
+select = ["E", "F", "D", "I"]
+ignore = ["D200", "D203", "D205", "D212"]
+fixable = ["ALL"]
+
+[tool.darglint]
+docstring_style = "google"
+strictness = "long"
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
