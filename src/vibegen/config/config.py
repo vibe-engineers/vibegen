@@ -33,7 +33,7 @@ class VibeGenConfig(VibeConfig):
             "(3) ensure your response strictly matches the declared return type, "
             "both in structure and data type, and "
             "(4) return only the value that fulfills the function’s contract, "
-            "with no explanations, commentary, or extra text."
+            "with no explanations, commentary, or extra text.",
         )
 
         super().__init__(*args, **kwargs)
