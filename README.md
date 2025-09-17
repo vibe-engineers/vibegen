@@ -1,9 +1,14 @@
 <p align="center">
+  <img width=300 src="https://raw.githubusercontent.com/vibe-engineers/vibegen/main/assets/vibegen.png" />
   <h1 align="center">VibeGen</h1>
 </p>
 
 <p align="center">
   <a href="https://github.com/vibe-engineers/vibegen/actions/workflows/ci-cd-pipeline.yml"> <img src="https://github.com/vibe-engineers/vibegen/actions/workflows/ci-cd-pipeline.yml/badge.svg" /> </a>
+  <a href="https://pypi.org/project/vibegen/"><img src="https://img.shields.io/pypi/v/vibegen.svg" /></a>
+  <a href="https://pypi.org/project/vibegen/"><img src="https://img.shields.io/pypi/pyversions/vibegen.svg" /></a>
+  <a href="https://github.com/vibe-engineers/vibegen/blob/main/LICENSE"><img src="https://img.shields.io/pypi/l/vibegen.svg" /></a>
+  <a href="https://pepy.tech/project/vibegen"><img src="https://pepy.tech/badge/vibegen" /></a>
 </p>
 
 ## Table of Contents
