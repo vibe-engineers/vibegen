@@ -26,7 +26,7 @@ authors = [
   { name="tjtanjin", email="cjtanjin@gmail.com" },
   { name="konglyyy", email="kongleyi99@gmail.com" },
 ]
-description = "Bring vibes into your code: LLM-powered if-statements and loops!"
+description = "Fake it till you make it: LLM-powered function stubs with vibes."
 dependencies = ["vibetools>=1.0.0,<2.0.0"]
 readme = "README.md"
 requires-python = ">=3.0"
