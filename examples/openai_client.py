@@ -13,17 +13,17 @@ client = Client(api_key=os.getenv("OPENAI_API_KEY"))
 
 # create a vibegen instance using the above client and specify a model
 # model variants for openai: https://platform.openai.com/docs/models
-vg = VibeGen(client, model="gpt-4.1-nano")
+vibegen = VibeGen(client, model="gpt-4.1-nano")
 
 # the example below tries to create a simple function for summation, without any implementations
-@vg
+@vibegen
 def add_numbers(num1: int, num2: int) -> int:
     """
     This function adds two numbers 
     """
     pass
 
-@vg
+@vibegen
 def multiply_numbers(num1: int, num2: int) -> int:
     """
     This function multiplies two numbers 
